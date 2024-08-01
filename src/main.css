@@ -1,0 +1,194 @@
+/* Toggle button styling */
+.toggle-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: none;
+    color: var(--text-color);
+    cursor: pointer;
+  }
+  
+  .searchicon {
+    border: none;
+    cursor: pointer;
+    size: 20px;
+    padding: 8px;
+    background-color: var(--background-color);
+    border-radius: 50%;
+    color: var(--text-color);
+  }
+  
+  .searchbackground {
+    position: fixed;
+    z-index: 99;
+    color: var(--text-color);
+    background-color: var(--card-background);
+  }
+
+  .grid_card {
+    display: grid;
+    grid-gap: 20px;
+    width: 100%;
+    grid-auto-flow: row;
+    gap: 10px;
+  }
+  
+  /* Mobile devices (small screens) */
+  @media only screen and (max-width: 600px) {
+    .grid_card {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .grid_card > * {
+      grid-column: span 1;
+    }
+  }
+  
+  /* Tablets (medium screens) */
+  @media only screen and (min-width: 601px) and (max-width: 900px) {
+    .grid_card {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .grid_card > *:nth-child(5) {
+      grid-column: span 2;
+    }
+    .grid_card > *:nth-child(6),
+    .grid_card > *:nth-child(8),
+    .grid_card > *:nth-child(10),
+    .grid_card > *:nth-child(11),
+    .grid_card > *:nth-child(13) {
+      grid-column: span 2;
+    }
+  }
+  
+  /* Laptops and desktops (large screens) */
+  @media only screen and (min-width: 901px) {
+    .grid_card {
+      grid-template-columns: repeat(6, 1fr);
+    }
+    .grid_card > *:nth-child(5) {
+      grid-column: span 2;
+    }
+    .grid_card > *:nth-child(6),
+    .grid_card > *:nth-child(8),
+    .grid_card > *:nth-child(10),
+    .grid_card > *:nth-child(11),
+    .grid_card > *:nth-child(13) {
+      grid-column: span 4;
+    }
+    .grid_card > *:nth-child(7),
+    .grid_card > *:nth-child(9) {
+      grid-column: span 2;
+    }
+    .grid_card > *:nth-child(10) {
+      grid-column: span 6;
+    }
+  }
+  
+  
+  
+
+  
+  .grid_item {
+    color: var(--text-color);
+    background-color: var(--card-background);
+    border-radius: 20px; 
+    padding: 20px;
+    font-size: 1rem; /* Adjust font size */
+  }
+  
+  
+    
+
+  
+  /* Input container styling */
+  .input-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .input-with-icon {
+    padding-left: 30px; /* Adjust based on the icon size */
+    border: none;
+    border-radius: 5px;
+    background-color: var(--background-color); /* Use variable */ 
+  }
+  
+  .input-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Ensures the icon does not block input clicks */
+  }
+
+  
+  .table-responsive {
+    overflow-x: auto;
+    max-width: 100%;
+  }
+  
+  
+  
+  .table {
+    color: var(--text-color); /* use the CSS variable for text color */
+  }
+  
+  .table th, .table td {
+    padding: 8px;
+    text-align: left;
+    color: var(--text-color); /* use the CSS variable for text color */
+    background-color: transparent; /* remove background color */
+  }
+  .table th, .table td {
+    padding: 8px;
+    text-align: left;
+    background-color: transparent; 
+  }
+
+  th, td {
+    padding: 8px;
+    text-align: left;
+    color: var(--text-color); /* use the CSS variable for text color */
+    background-color: transparent; /* remove background color */
+  }
+  
+  
+  input[type="checkbox"] {
+    margin: 0 10px;
+  }
+  
+  label {
+    margin-left: 10px;
+  }
+  
+
+  .main_bag{
+     color: #8095ff;
+     background-color: rgba(128, 149, 255, 0.2);
+     border-radius: 10px;
+     padding: 10px;
+     font-size: 60px;
+  }
+
+  .main_bag1{
+    color: #00c98d;
+    background-color: rgba(0, 201, 141, 0.2);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 60px;
+ }
+ .main_bag2{
+  color: #f25e5e;
+  background-color: rgba(242, 94, 94, 0.2);
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 60px;
+}
+.main_bag3{
+  color: #e93e9a;
+  background-color: rgba(233, 62, 154, 0.2);
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 60px;
+}
